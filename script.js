@@ -13,9 +13,10 @@ boton.addEventListener("click", () => {
 
   // Hora en formato HH:MM:SS
   const ahora = new Date();
-  const hora = [ahora.getHours(), ahora.getMinutes(), ahora.getSeconds()]
-    .map(n => String(n).padStart(2, "0"))
-    .join(":");
+// Obtiene la hora actual en formato HH:MM:SS
+const hora = [ahora.getHours(), ahora.getMinutes(), ahora.getSeconds()]
+  .map(n => String(n).padStart(2, "0"))
+  .join(":");
 
   // Crear la fila con dos celdas
   const fila = document.createElement("tr");
